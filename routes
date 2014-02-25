@@ -1,0 +1,25 @@
+          Prefix Verb   URI Pattern                      Controller#Action
+           chefs GET    /chefs(.:format)                 chefs#index
+                 POST   /chefs(.:format)                 chefs#create
+        new_chef GET    /chefs/new(.:format)             chefs#new
+       edit_chef GET    /chefs/:id/edit(.:format)        chefs#edit
+            chef GET    /chefs/:id(.:format)             chefs#show
+                 PATCH  /chefs/:id(.:format)             chefs#update
+                 PUT    /chefs/:id(.:format)             chefs#update
+                 DELETE /chefs/:id(.:format)             chefs#destroy
+         recipes GET    /recipes(.:format)               recipes#index
+                 POST   /recipes(.:format)               recipes#create
+      new_recipe GET    /recipes/new(.:format)           recipes#new
+     edit_recipe GET    /recipes/:id/edit(.:format)      recipes#edit
+          recipe GET    /recipes/:id(.:format)           recipes#show
+                 PATCH  /recipes/:id(.:format)           recipes#update
+                 PUT    /recipes/:id(.:format)           recipes#update
+                 DELETE /recipes/:id(.:format)           recipes#destroy
+    static_pages GET    /static_pages(.:format)          static_pages#index
+                 POST   /static_pages(.:format)          static_pages#create
+ new_static_page GET    /static_pages/new(.:format)      static_pages#new
+edit_static_page GET    /static_pages/:id/edit(.:format) static_pages#edit
+     static_page GET    /static_pages/:id(.:format)      static_pages#show
+                 PATCH  /static_pages/:id(.:format)      static_pages#update
+                 PUT    /static_pages/:id(.:format)      static_pages#update
+                 DELETE /static_pages/:id(.:format)      static_pages#destroy
