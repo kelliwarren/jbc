@@ -1,0 +1,11 @@
+<h1>Show Recipe <small><%= link_to('edit', edit_recipe_path(@recipe.id))%></small></h1>
+<h2>Recipe:<%= @recipe.title %></h2>
+<h3>Description:<%= @recipe.description %></h3>
+<h3>Cook Time:<%= @recipe.cook_time %></h3>
+<h3>Instructions:<%= @recipe.instructions%></h3>
+<h3>Ingredients:<%= @recipe.ingredients %></h3>
+
+
+<div><%= image_tag(@recipe.picture, style: "width: 150px") %> </div>
+
+

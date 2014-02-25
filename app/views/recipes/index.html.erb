@@ -1,0 +1,49 @@
+<h1>Listing recipes</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Cook Time</th>
+      <th>Instructions</th>
+      <th>Picture</th>
+      <th>Ingredients</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+  </thead>
+
+
+  <tbody>
+    <% @recipes.each do |recipe| %>
+      <tr>
+        <td><%=recipe.title%></td>
+        <td><%=recipe.description%></td>
+        <td><%=recipe.cook_time %></td>
+        <td><%=recipe.instructions%></td>
+        <td><%=recipe.pictures%></td>
+        <td><%=recipe.ingredients%></td>
+        <td><%=link_to 'Show', recipe_path %></td>
+        <td><%=link_to 'Edit', edit_recipe_path(recipe.id) %></td>
+        <td><%=link_to 'Destroy', recipe_path, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+
+
+      </tr>
+    <% end %>
+  </tbody> 
+</table> 
+
+<br>
+
+<%= link_to 'New Recipe', new_recipe_path %>
+
+
+
+
+
+
+
+  
+
