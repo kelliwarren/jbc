@@ -28,6 +28,11 @@
     </section>
 
     <section>
+      <%= f.label :chef %>
+      <%= f.select(:chef_id, options_for_select(options_for_select_chefs)) %>
+    </section>
+
+    <section>
       <%= f.submit('SAVE') %>
     </section>
 

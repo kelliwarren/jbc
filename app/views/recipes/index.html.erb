@@ -23,11 +23,11 @@
         <td><%=recipe.description%></td>
         <td><%=recipe.cook_time %></td>
         <td><%=recipe.instructions%></td>
-        <td><%=recipe.pictures%></td>
+        <td><%=recipe.picture%></td>
         <td><%=recipe.ingredients%></td>
-        <td><%=link_to 'Show', recipe_path %></td>
-        <td><%=link_to 'Edit', edit_recipe_path(recipe.id) %></td>
-        <td><%=link_to 'Destroy', recipe_path, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        <td><%=link_to 'Show', recipe %></td>
+        <td><%=link_to 'Edit', edit_recipe_path(recipe) %></td>
+        <td><%=link_to 'Destroy', recipe_path(recipe.id), method: :delete, data: {confirm: 'Are you sure?'} %></td>
 
 
       </tr>
