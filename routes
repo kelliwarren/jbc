@@ -15,5 +15,9 @@ edit_recipe GET    /recipes/:id/edit(.:format) recipes#edit
             PATCH  /recipes/:id(.:format)      recipes#update
             PUT    /recipes/:id(.:format)      recipes#update
             DELETE /recipes/:id(.:format)      recipes#destroy
+      users POST   /users(.:format)            users#create
+   new_user GET    /users/new(.:format)        users#new
        root GET    /                           static_pages#home
       about GET    /about(.:format)            static_pages#about
+     logout DELETE /logout(.:format)           sessions#logout
+      login GET    /login(.:format)            sessions#new
